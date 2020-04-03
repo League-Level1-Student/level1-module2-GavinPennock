@@ -5,6 +5,17 @@ package _04_tea_maker;
  */
 
 public class TeaMaker {
+	public static void main(String[] args) {
+		Kettle kettle=new Kettle();
+		kettle.boil();
+		Cup cup=new Cup();
+		TeaBag teabag=new TeaBag("green");
+		TeaBag teabag1=new TeaBag("Chamomile");
+		cup.makeTea(teabag, kettle.getWater());
+		cup.makeTea(teabag1, kettle.getWater());
+		
+	}
+
 
 	/* Figure out how to make a cup of tea in this runner class, using the other classes below */
 
